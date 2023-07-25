@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewakoof</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        #screen {
+            width: 100%;
+            height: 2500px;
+            border: 1px solid black;
+        }
+
+        .nav {
+            width: 100%;
+            height: 150px;
+            /* border: 1px solid blue; */
+            position: sticky;
+            top: 0px;
+
+
+        }
+
+        .nav-b {
+            width: 100%;
+            height: 30px;
+            background-color: #EEEEEE;
+        }
+
+        .nav-1 {
+            width: 70%;
+            height: 30px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 0%;
+
+
+        }
+
+        .nav-1-left {
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid red; */
+            margin-left: 0%;
+            display: flex;
+            font-family: montserrat, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            text-transform: capitalize;
+            padding-top: 10px;
+            padding-left: 20px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            color: rgb(80, 80, 80);
+
+        }
+
+        .nav-1-right {
+            width: 20%;
+            height: 100%;
+            /* border: 1px solid red; */
+            margin-right: 0%;
+            display: flex;
+            font-family: montserrat, sans-serif;
+            font-size: 10px;
+            text-align: center;
+            padding-top: 10px;
+            padding-left: 10px;
+            list-style: none;
+            justify-content: space-between;
+            color: rgb(80, 80, 80)
+        }
+
+        .nav-2 {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: #fff;
+        }
+
+        .nav-2 img {
+            width: 160px;
+            height: 20px;
+            margin-left: 80px;
+            margin-top: 15px;
+        }
+
+        .nav-2-left {
+            width: 18%;
+            height: 100%;
+            /* border: 1px solid black; */
+            margin-left: 1.5%;
+            font-family: montserrat, sans-serif;
+            font-size: 13px;
+            padding-top: 20px;
+            padding-left: 20px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            color: #4e535a;
+            font-family: montserrat, sans-serif;
+        }
+
+        .nav-2-right {
+            width: 40%;
+            height: 100%;
+            /* border: 1px solid black; */
+            margin-left: 20%;
+            display: flex;
+        }
+
+        .nav-2-search {
+
+            padding-left: 3%;
+            width: 60%;
+            height: 40px;
+            /* border: 1px solid black; */
+            margin-top: 4px;
+            border-radius: 5px;
+            background-color: #EAEAEA;
+
+
+        }
+
+        .nav-2-right .nav-2-search input {
+            margin-left: 2%;
+            margin-top: 10px;
+            width: 80%;
+            height: 20px;
+            outline: none;
+            background: transparent;
+            /* border: 1px solid black; */
+            border: none;
+            font-family: montserrat, sans-serif;
+            font-size: 10px;
+            /* background-color: #EAEAEA;   */
+
+        }
+
+        .nav-2-right .n2-bar {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .n2-log {
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid black; */
+            text-decoration: none;
+            margin-top: 15px;
+            margin-left: 5px;
+            /* padding-top: 10px; */
+            margin-top: 15px;
+            margin-left: 5px;
+            text-align: center;
+            color: #4e535a;
+            font-family: montserrat, sans-serif;
+            text-decoration: none;
+            font-family: montserrat, sans-serif;
+        }
+
+        .n2-icon {
+            margin-top: 15px;
+            cursor: pointer;
+            display: inline-block;
+            justify-content: space-between;
+            margin-left: 15px;
+
+        }
+
+        .n2-icon i {
+            display: inline-block;
+            justify-content: space-between;
+            margin-left: 15px;
+        }
+
+        .nav-3 {
+            width: 100%;
+            height: 66px;
+            /* border: 1px solid black; */
+            background-color: #fff;
+
+        }
+
+        .nav-3-header {
+            width: 70%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            margin: auto;
+            padding-top: 20px;
+            display: flex;
+            font-size: 18px;
+            color: black;
+            justify-content: space-between;
+        }
+
+        .main-box {
+            width: 100%;
+            height: 470px;
+            /* border: solid black; */
+            /* position: relative; */
+            /* box-sizing: border-box; */
+            margin-bottom: 10px;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img img {
+            width: 40%;
+            cursor: pointer;
+        }
+
+        #screen .container {
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid black; */
+            margin-top: 0px;
+            margin-bottom: 80px;
+        }
+
+        .container .container-im {
+            width: 85%;
+            height: 100%;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ci-1,
+        .ci-2,
+        .ci-3,
+        .ci-4,
+        .ci-5,
+        .ci-6,
+        .ci-7,
+        .ci-8 {
+            width: 10%;
+            height: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .img-bar {
+            width: 100%;
+            height: 160px;
+            /* border: 1px solid blue; */
+            margin-top: 50px;
+            display: flex;
+        }
+
+        .img-bar-1 {
+            margin margin-top: 50px;
+        }
+
+        .combo-img {
+            width: 100%;
+            height: 450px;
+            /* border: 1px solid red; */
+            display: inline-flex;
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/74e9527aa9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="screeen">
+        <div class="nav">
+            <div class="nav-b">
+                <div class="nav-1">
+                    <div class="nav-1-left">
+                        <p>Offers</p>
+                        <p>Fanbook</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i>Download App</p>
+                        <p>TriBe Membership</p>
+                    </div>
+                    <div class="nav-1-right">
+                        <p style="text-indent: 80px;">Contact Us</p>
+                        <p>Track Order</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="nav-2">
+                <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" />
+                <div class="nav-2-left">
+                    <p>MEN</p>
+                    <p>WOMEN</p>
+                    <p>MOBILE COVERS</p>
+                </div>
+                <div class="nav-2-right">
+                    <div class="nav-2-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input autofocus type="text" placeholder="search by product,category or collection">
+                    </div>
+                    <div class="n2-bar">|</div>
+                    <div class="n2-log">
+                        <button>LogIn</button>
+                    </div>
+                    <div class="n2-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="nav-3">
+                <div class="nav-3-header">
+                    <p>BEWAKOOF AIR</p>
+                    <p>MEN</p>
+                    <p>WOMEN</p>
+                    <p>ACCESSORIES</p>
+                    <p>OFFICIAL MERCH</p>
+                    <p>PLUS SIZE</p>
+                    <p>TEENS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-box">
+            <div class="img">
+                <img src="https://images.bewakoof.com/uploads/grid/app/1x1-urban-oversize-1689572490.jpg" />
+                <img
+                    src="https://images.bewakoof.com/uploads/grid/app/relaunch-AIR-newbanner-1x1-common-1689943100.jpg" />
+                <img src="https://images.bewakoof.com/uploads/grid/app/newbanner-1x1-ovrszd-jogs-1690193350.jpg" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-im">
+                <div class="ci-1">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-newarrivals-common-1682570370.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        New Arrivals</p>
+                </div>
+                <div class="ci-2">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-common-bestseller-1679567164.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Bestsellers</p>
+                </div>
+                <div class="ci-3">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-official-collab-common-1682570371.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Official Collaborations</p>
+                </div>
+                <div class="ci-4">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-old-version-1687889121.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Customization</p>
+                </div>
+                <div class="ci-5">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/ezgif-com-gif-maker-1684474101.gif" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Combos</p>
+                </div>
+                <div class="ci-6">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/vote-thumbnail-1668508339.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Vote For Designs</p>
+                </div>
+                <div class="ci-7">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668508337.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Last Sizes Left</p>
+                </div>
+                <div class="ci-8">
+                    <img style="width: 100%;"
+                        src="https://images.bewakoof.com/uploads/grid/app/new-thumbnail-icon-2022-D-230x320-plus-size-common-1682570373.jpg" />
+                    <p
+                        style="font-size: 12px;text-align: center; text-decoration: none;color: black; font-family: montserrat,sans-serif;">
+                        Plus Size</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-bar">
+            <div class="img-bar-1">
+                <img src="https://images.bewakoof.com/uploads/grid/app/brand-strip-1683780891-1684740361.gif" />
+            </div>
+        </div>
+        <h2 style="margin-top: 10px; text-align: center; font-family: montserrat, sans-serif;">Designs of the Week</h2>
+        <div class="combo-img">
+            <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men-1690262939.jpg" />
+            <img src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women-1690262940.jpg" />
+        </div>
+        <div>
+            <h2 style="margin-top: 10px; text-align: center; font-family: montserrat, sans-serif;">TRENDING CATEGORIES</h2>
+            <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg"/>
+        </div>
+    </div>
+
+</body>
+
+</html>
