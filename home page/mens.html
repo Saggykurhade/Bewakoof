@@ -220,26 +220,40 @@
             color: #949494;
         }
 
-        #filt-img {
+        #filter {
             width: 80%;
-            height: 1500px;
+            font-size: 12px;
+            color: #949494;
             border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
             margin: auto;
             margin-top: 20px;
         }
 
         #filter>div:nth-child(1) {
-            width: 25%;
-            height: 13px;
-            font-size: 12px;
-            color: #949494;
-            border: 1px solid green;
+            text-align: left;
         }
 
         #filter>div:nth-child(2) {
-            width: 25%;
-            height: 300px;
-            border: 1px solid black;
+            text-align: right;
+        }
+
+        #opt-img {
+            width: 80%;
+            height: 1500px;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 1px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #images {
+            width: 55%;
+            height: 1500px;
+            display: flex;
+            border: 1px solid aqua;
         }
     </style>
     <script src="https://kit.fontawesome.com/74e9527aa9.js" crossorigin="anonymous"></script>
@@ -300,13 +314,39 @@
             <p>(7535)</p>
         </div>
 
-        <div id="filt-img">
-            <div id="filter">
-                <div><b>FILTERS</b></div>
-                <div>
-                    
-                </div>
+        <div id="filter">
+            <div><b>FILTERS</b></div>
+            <div><b>SORT BY</b></div>
+        </div>
+
+        <div class="pop">
+            <select name="popular" id="" style="border: none;">
+                <option value="popular">Popular</option>
+                <option value="popular">New</option>
+                <option value="popular">Price : High to Low</option>
+                <option value="popular">Price : Low to High</option>
+            </select>
+        </div>
+
+
+        <div id="opt-img">
+            <div>
+                <select class="select" style="width: 100%; height: 40px; border: none;">
+                    <option value="">Category</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
             </div>
+
+            <div id="images">
+                <img src="https://images.bewakoof.com/t640/men-s-orange-the-ryuk-graphic-printed-t-shirt-592476-1684488936-1.jpg"
+                    alt="">
+            </div>
+
         </div>
     </div>
 </body>
