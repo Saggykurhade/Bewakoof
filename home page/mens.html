@@ -220,23 +220,27 @@
             color: #949494;
         }
 
-        #filter {
+        #upbar {
             width: 80%;
-            font-size: 12px;
-            color: #949494;
-            border: 1px solid red;
-            display: flex;
-            justify-content: space-between;
+            /* border: 1px solid red;*/
             margin: auto;
+            display: flex;
             margin-top: 20px;
         }
 
-        #filter>div:nth-child(1) {
-            text-align: left;
+        #name {
+            width: 92%;
+            color: #949494;
+            /* border: 1px solid black; */
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
         }
 
-        #filter>div:nth-child(2) {
-            text-align: right;
+        .pop {
+            width: 8%;
+            /* border: 1px solid green; */
+            border: none;
         }
 
         #opt-img {
@@ -314,20 +318,21 @@
             <p>(7535)</p>
         </div>
 
-        <div id="filter">
-            <div><b>FILTERS</b></div>
-            <div><b>SORT BY</b></div>
-        </div>
+        <div id="upbar">
+            <div id="name">
+                <div><b>FILTERS</b></div>
+                <div><b>SORT BY</b></div>
+            </div>
 
-        <div class="pop">
-            <select name="popular" id="" style="border: none;">
-                <option value="popular">Popular</option>
-                <option value="popular">New</option>
-                <option value="popular">Price : High to Low</option>
-                <option value="popular">Price : Low to High</option>
-            </select>
+            <div class="pop">
+                <select name="popular" style="width: 94px;">
+                    <option value="popular">Popular</option>
+                    <option value="popular">New</option>
+                    <option value="popular">Price : High to Low</option>
+                    <option value="popular">Price : Low to High</option>
+                </select>
+            </div>
         </div>
-
 
         <div id="opt-img">
             <div>
