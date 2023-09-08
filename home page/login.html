@@ -4,229 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Log-in</title>
     <script src="https://kit.fontawesome.com/74e9527aa9.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: Roboto, Sans-serif;
-        }
-
-        body {
-            overflow: hidden;
-        }
-
-        #login-Register {
-            position: fixed;
-            background-color: #434c85;
-            z-index: 10;
-            width: 100%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-        }
-
-        #log-layout {
-            background-color: white;
-            width: 425px;
-            height: 570px;
-            border-radius: 6px;
-            font-family: Roboto, sans-serif;
-        }
-
-        #log-pad {
-			padding: 20px 35px;
-		}
-
-        #log-pad2 {
-            padding: 0px 12px;
-        }
-
-        .top-header {
-            /* border: 1px solid red; */
-            display: flex;
-            justify-content: right;
-            color: rgb(51, 51, 51);
-        }
-
-        .top-header p {
-			margin-right: 130px;
-			font-size: 16px;
-			font-weight: 500;
-			margin-top: 5px;
-		}
-
-        .top-header i {
-            cursor: pointer;
-        }
-
-        .login-bar {
-            /* border: 1px solid red; */
-            margin-top: 35px;
-        }
-
-        .bar-layout {
-            border: 1px solid rgb(153, 153, 153);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            padding: 10px 18px;
-            margin-top: 24px;
-            cursor: pointer;
-            transition: 0.6s;
-        }
-
-        .bar-layout:hover {
-            border-color: rgb(240, 240, 240);
-            background-color: rgb(243, 243, 243);
-        }
-
-        .bar-layout p {
-            font-size: 14px;
-            font-weight: 500;
-            color: rgb(89, 89, 89);
-            margin-left: 62px;
-        }
-
-        .bar-layout:nth-child(2) p:nth-child(2) {
-            margin-left: 66px;
-        }
-
-        .bar-layout:last-child p:last-child {
-            margin-left: 70px;
-        }
-
-        .or {
-            text-align: center;
-            font-size: 14px;
-            margin: 20px 0px;
-            color: rgb(89, 89, 89);
-        }
-
-        .log-in-box {
-            /* border: 1px solid blue; */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 500;
-            word-spacing: -2px;
-            margin-top: 12px;
-        }
-
-        .log-in :nth-child(1) {
-            margin-top: 0;
-        }
-
-        .log-in-box input {
-            width: 190px;
-            height: 25px;
-            font-size: 14px;
-            padding: 0px 5px;
-            outline: none;
-            border: none;
-            border-bottom: 1px solid rgb(131, 131, 131);
-            transition: 0.2s;
-        }
-
-        .log-in-box input:focus-visible {
-            border-bottom: 1px solid rgb(236, 51, 51);
-        }
-
-        .log-in-but {
-            /* border: 1px solid red; */
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .log-in-but button {
-            font-size: 14px;
-            font-weight: 500;
-            padding: 5px 25px;
-            margin-top: 25px;
-            border: none;
-            border-radius: 6px;
-            background-color: #333545;
-            color: white;
-            cursor: pointer;
-        }
-
-        .log-in-but button:hover {
-            background-color: aqua;
-            color: black;
-            font-weight: bold;
-        }
-
-        .legal-notices {
-            text-align: center;
-            color: rgb(80, 80, 80);
-            font-size: 12px;
-            margin-top: 25px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .legal-notices u {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body>
     <div id="screen">
-        <div id="login-Register">
-            <div id="log-layout">
-                <div id="log-pad">
-                    <div class="top-header">
-                        <p>Get Started</p>
-                        <div>
-                            <a href="./home.html"><i class="fa-solid fa-xmark fa-xl"></i></a>
-                        </div>
+
+        <div class="nav">
+            <div class="nav-b">
+                <div class="nav-1">
+                    <div class="nav-1-left">
+                        <p>Offers</p>
+                        <p>Fanbook</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i>Download App</p>
+                        <p>TriBe Membership</p>
                     </div>
-                    <div id="log-pad2">
-                        <div class="login-bar">
-                            <div class="bar-layout">
-                                <div><img src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg" alt="">
-                                </div>
-                                <p>Continue with Google</p>
-                            </div>
-                            <div class="bar-layout">
-                                <div><img src="https://in.bmscdn.com/webin/common/icons/email.svg" alt=""></i></div>
-                                <p>Continue with Email</p>
-                            </div>
-                            <div class="bar-layout">
-                                <div><i class="fa-brands fa-apple fa-lg"></i></div>
-                                <p>Continue with Apple</p>
-                            </div>
-                        </div>
-                        <div class="or">OR</div>
-                        <div class="log-in">
-                            <div class="log-in-box">
-                                <label>Username</label>
-                                <input type="text" placeholder="Username">
-                            </div>
-                            <div class="log-in-box">
-                                <label>Email</label>
-                                <input type="email" placeholder="Enter your email">
-                            </div>
-                            <div class="log-in-box">
-                                <label>Password</label>
-                                <input type="password" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="log-in-but">
-                            <button>Log In</button>
-                            <button>Nw Register</button>
-                        </div>
+                    <div class="nav-1-right">
+                        <p style="text-indent: 80px;">Contact Us</p>
+                        <p>Track Order</p>
                     </div>
-                    <div class="legal-notices">
-                        <input type="radio"><p>I agree to the <u>Terms & Conditions</u> & <u>Privacy Policy</u></p>
+                </div>
+            </div>
+
+            <div class="nav-2">
+                <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" />
+                <div class="nav-2-left">
+                    <p>MEN</p>
+                    <p>WOMEN</p>
+                    <p>MOBILE COVERS</p>
+                </div>
+                <div class="nav-2-right">
+                    <div class="nav-2-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input autofocus type="text" placeholder="search by product,category or collection">
+                    </div>
+                    <div class="n2-bar">|</div>
+                    <div class="n2-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="body-content">
+            <div id="welcome">
+                <div class="welcome-text">
+                    <p>Welcome to the world of Bewakoof<span class="trademark">®</span>!</p>
+                </div>
+                <div class="welcome-img">
+                    <img src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="">
+                </div>
+            </div>
+            <div id="login">
+                <div id="login-acess">
+                    <p class="login-text">Log in / Sign up</p>
+                    <p class="latest-trending">for Latest trends, exciting offers and everything Bewakoof<span
+                            class="trademark2">®</span>!</p>
+                    <div class="login-box">
+                        <div class="loginWithNum">
+                            <div class="loginWithNum-box">
+                                <div class="ind-flag"><img
+                                        src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="">
+                                </div>
+                                <p>+91</p>
+                                <div><i class="fa-solid fa-sort-down fa-sm"></i></div>
+                            </div>
+                            <input type="text" placeholder="Enter Moblie Number" class="EMN">
+                        </div>
+                        <button>CONTINUE</button>
+                    </div>
+                </div>
+                <div id="OR">
+                    <div class="line-OR"></div>
+                    <p>OR</p>
+                    <div class="line-OR"></div>
+                </div>
+                <div id="login-with">
+                    <div class="login-with-email">
+                        <div class="email-logo">
+                            <img src="https://images.bewakoof.com/web/carbon-email-1620039620.png" alt="">
+                        </div>
+                        <p>CONTINUE WITH EMAIL</p>
+                    </div>
+                    <div class="login-with-GF">
+                        <div class="login-with-google">
+                            <div class="google-logo">
+                                <img src="https://images.bewakoof.com/web/group-3-2x-1558356035.png" alt="">
+                            </div>
+                            <p>GOOGLE</p>
+                        </div>
+                        <div class="login-with-facebook">
+                            <div class="facebook-logo">
+                                <img src="https://images.bewakoof.com/web/bi-facebook2x-1620886445.png" alt="">
+                            </div>
+                            <p>FACEBOOK</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="policy">
+                    <p>By creating an account or logging in, you agree with <br> Bewakoof<sup
+                            class="trademark3">®</sup>'s <span class="TC">Terms and Conditions</span> and <span
+                            class="PP">Privacy Policy</span>.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 
